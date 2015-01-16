@@ -1,0 +1,11 @@
+<h1><?php echo $this->title; ?></h1>
+
+<ul>
+    <?php
+        foreach($this->feeds->item as $feed) {
+            echo "<li><b>".$feed->title. "</b><br >" . $feed->description . "<br />" . $feed->link . "</li>";
+            echo "<br />";
+        }
+
+    ?>
+</ul>
